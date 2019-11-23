@@ -13,6 +13,7 @@ class Student extends Person {
     public Student() {
         super();
     }
+
     public Student(String name, int score, int grade) {
         super(name);
         this.score = score;

@@ -1,12 +1,21 @@
 package com.rjf.reflect;
 
 public class ReflectMain {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+
+        Class cls=String.class;
+        printClassInfo(cls);
+
         printClassInfo("".getClass());
         printClassInfo(Runnable.class);
         printClassInfo(java.time.Month.class);
         printClassInfo(String[].class);
         printClassInfo(int.class);
+
+        Class clss=Class.forName("java.lang.String");
+        printClassInfo( clss);
+
+
     }
 
     static void printClassInfo(Class cls) {
