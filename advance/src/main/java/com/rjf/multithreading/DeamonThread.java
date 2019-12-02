@@ -2,7 +2,7 @@ package com.rjf.multithreading;
 
 public class DeamonThread {
     public static void main(String[] args){
-        Thread t = new MyThread();
+        Thread t = new Thread();
         t.setDaemon(true);
         t.start();
     }

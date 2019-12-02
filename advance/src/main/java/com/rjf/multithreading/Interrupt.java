@@ -2,17 +2,39 @@ package com.rjf.multithreading;
 
 public class Interrupt {
     public static void main(String[] args) throws Exception{
-        Thread t = new MyThread2();
+        Thread t = new MyThread3();
         t.start();
         Thread.sleep(1000);
         t.interrupt(); // 中断t线程
         t.join(); // 等待t线程结束
-        System.out.println("end");
+        System.out.println("main thread end!");
+
+   /*     Thread t=new Thread4();
+        t.start();
+        Thread.sleep(2000);
+        ((Thread4) t).running=false;
+        System.out.println("main thread end!");*/
+
+
     }
 }
 
+class MyThread2 extends Thread{
+        public void run(){
+            int n=0;
+            while(! isInterrupted()){
+                n++;
+                System.out.println("hello! "+n);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+}
 
-class MyThread2 extends Thread {
+class MyThread3 extends Thread {
     public void run() {
         Thread hello = new HelloThread();
         hello.start(); // 启动hello线程
@@ -37,6 +59,23 @@ class HelloThread extends Thread {
                 break;
             }
         }
+    }
+}
+
+class Thread4 extends Thread{
+    public volatile boolean running=true;
+    public void run(){
+        int n=0;
+        while(running && n<10){
+            n++;
+            System.out.println("hello ! "+n);
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println("end!");
     }
 }
 

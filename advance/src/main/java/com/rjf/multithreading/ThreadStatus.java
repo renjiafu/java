@@ -13,12 +13,19 @@ public class ThreadStatus {
        */
 
         Thread thread=new Thread(() -> {
-            System.out.println("hello");
+            for (int i=0;i<10;i++) {
+                System.out.println("hello");
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
         });
 
         System.out.println("start");
         thread.start();
-        thread.join(1000);
+        thread.join(5000);
         System.out.println("end");
 
 

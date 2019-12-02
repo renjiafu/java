@@ -6,10 +6,10 @@ public class CreateNewThread {
         Thread thread=new Thread();
         thread.start();
 
-        Thread thread1=new MyThread();
+        Thread thread1=new MyThread1();
         thread1.start();
 
-        Thread thread2=new Thread(new MyRunable());
+        Thread thread2=new Thread(new MyRunable1());
         thread2.start();
 
         new Thread(()->System.out.println("start new thread by lambda")).start();
@@ -17,13 +17,13 @@ public class CreateNewThread {
     }
 }
 
-class MyThread extends Thread{
+class MyThread1 extends Thread{
     public void run(){
         System.out.println("start new thread by extends thread");
     }
 }
 
-class MyRunable implements Runnable{
+class MyRunable1 implements Runnable{
 
     @Override
     public void run() {
