@@ -1,5 +1,6 @@
 package com.rjf.multithreading;
 
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -26,12 +27,16 @@ class Counter {
     private final Lock lock = new ReentrantLock();
     private int count;
 
-    public void add(int n) {
-        lock.lock();
-        try {
-            count += n;
-        } finally {
-            lock.unlock();
+    public void add(int n) throws InterruptedException {
+//        lock.lock();
+        if (lock.tryLock(1, TimeUnit.SECONDS)) {
+            try {
+                count += n;
+            } finally {
+                lock.unlock();
+            }
+
         }
+
     }
 }
