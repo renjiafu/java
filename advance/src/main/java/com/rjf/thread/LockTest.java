@@ -1,4 +1,4 @@
-package com.rjf.collection.thread;
+package com.rjf.thread;
 
 import java.util.Date;
 
