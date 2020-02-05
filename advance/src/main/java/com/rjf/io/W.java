@@ -2,11 +2,10 @@ package com.rjf.io;
 
 import java.io.FileWriter;
 import java.io.Writer;
-import java.nio.charset.StandardCharsets;
 
 public class W {
     public static void main(String[] args) throws Exception{
-        Writer writer=new FileWriter("readme.txt", StandardCharsets.UTF_8);
+        Writer writer=new FileWriter("readme.txt");
         writer.write('H');
         writer.close();
 

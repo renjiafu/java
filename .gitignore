@@ -3,7 +3,6 @@
 *.iml
 *.log
 .idea
-/start/target/
 
 
 
