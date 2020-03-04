@@ -15,8 +15,8 @@
     </modules>
 
     <properties>
-        <maven.compiler.source>11.0.5</maven.compiler.source>
-        <maven.compiler.target>11.0.5</maven.compiler.target>
+        <maven.compiler.source>11.0.6</maven.compiler.source>
+        <maven.compiler.target>11.0.6</maven.compiler.target>
     </properties>
 
 </project>

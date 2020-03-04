@@ -3,12 +3,14 @@ package com.rjf.io;
 import java.io.File;
 import java.io.IOException;
 
-public class FileObj {
-    public static void main(String[] args) throws IOException {
-        File file=new File("./a.txt");
-        System.out.println(file);
+public class MyFile {
 
-        file.createNewFile();
+    public static void main(String[] args) throws IOException {
+        /*文件类*/
+        File file=new File("./a.txt");
+        if (!file.exists()){
+            file.createNewFile();
+        }
 
     }
 
