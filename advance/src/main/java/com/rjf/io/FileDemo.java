@@ -3,7 +3,7 @@ package com.rjf.io;
 import java.io.File;
 import java.io.IOException;
 
-public class MyFile {
+public class FileDemo {
 
     public static void main(String[] args) throws IOException {
         /*文件类*/

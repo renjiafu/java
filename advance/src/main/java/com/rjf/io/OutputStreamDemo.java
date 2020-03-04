@@ -3,7 +3,7 @@ package com.rjf.io;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 
-public class MyOutputStream {
+public class OutputStreamDemo {
 
     public static void main(String[] args)  throws Exception{
 

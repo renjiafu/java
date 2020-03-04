@@ -3,7 +3,7 @@ package com.rjf.io;
 import java.io.FileReader;
 import java.io.Reader;
 
-public class MyReader {
+public class ReaderDemo {
 
     public static void main(String[] args) throws Exception{
 

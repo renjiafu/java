@@ -3,7 +3,7 @@ package com.rjf.io;
 import java.io.FileWriter;
 import java.io.Writer;
 
-public class MyWriter {
+public class WriterDemo {
 
     public static void main(String[] args) throws Exception{
 

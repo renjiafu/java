@@ -3,7 +3,7 @@ package com.rjf.io;
 import java.io.FileInputStream;
 import java.io.InputStream;
 
-public class MyInputStream {
+public class InputStreamDemo {
     public static void main(String[] args) throws Exception {
 
         InputStream inputStream=new FileInputStream("./a.txt");

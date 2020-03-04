@@ -3,7 +3,7 @@ package com.rjf.io.buffered;
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 
-public class MyBufferedInputStream {
+public class BufferedInputStreamDemo {
 
     public static void main(String[] args) throws Exception {
 
