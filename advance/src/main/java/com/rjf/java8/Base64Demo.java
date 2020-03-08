@@ -13,12 +13,20 @@ public class Base64Demo {
 
             /*解码*/
             byte[] decode = Base64.getDecoder().decode(encode);
+            System.out.println("decode : "+new String(decode,"utf-8"));
 
-            StringBuffer sb = new StringBuffer();
-            for(byte b:decode){
-                sb.append((char)b);
-            }
-            System.out.println("decode : "+sb);
+
+            /*编码*/
+            String encodeUrl = Base64.getUrlEncoder().encodeToString("Rene".getBytes("utf-8"));
+            System.out.println("encodeUrl : "+encodeUrl);
+
+            /*解码*/
+            byte[] decodeUrl = Base64.getUrlDecoder().decode(encodeUrl);
+            System.out.println("decodeUrl : "+new String(decodeUrl,"utf-8"));
+
+
+
+
         }catch(Exception e){
             e.printStackTrace();
         }
