@@ -3,7 +3,7 @@ package com.rjf.concurrent.thread;
 
 import java.util.concurrent.TimeUnit;
 
-public class DeadLock {
+public class DeadLockDemo {
 
     static Object lock1 = new Object();
     static Object lock2 = new Object();
@@ -13,11 +13,11 @@ public class DeadLock {
         new Thread(() -> {
             try {
                 while (true) {
-                    synchronized (DeadLock.lock1) {
+                    synchronized (DeadLockDemo.lock1) {
                         System.out.println(System.nanoTime() + "  Lock1 锁住线程 : " + Thread.currentThread().getName());
                         /*停顿一秒*/
                         TimeUnit.SECONDS.sleep(1);
-                        synchronized (DeadLock.lock2) {
+                        synchronized (DeadLockDemo.lock2) {
                             System.out.println(System.nanoTime() + "  Lock2 锁住线程 : " + Thread.currentThread().getName());
                         }
                     }
@@ -30,11 +30,11 @@ public class DeadLock {
         new Thread(() -> {
             try {
                 while (true) {
-                    synchronized (DeadLock.lock2) {
+                    synchronized (DeadLockDemo.lock2) {
                         System.out.println(System.nanoTime() + "  Lock2 锁住线程 : " + Thread.currentThread().getName());
                         /*停顿一秒*/
                         TimeUnit.SECONDS.sleep(1);
-                        synchronized (DeadLock.lock1) {
+                        synchronized (DeadLockDemo.lock1) {
                             System.out.println(System.nanoTime() + "  Lock2 锁住线程 : " + Thread.currentThread().getName());
                         }
                     }
