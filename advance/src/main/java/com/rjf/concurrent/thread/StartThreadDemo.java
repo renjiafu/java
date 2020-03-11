@@ -1,4 +1,4 @@
-package com.rjf.concurrent;
+package com.rjf.concurrent.thread;
 
 public class StartThreadDemo {
 
