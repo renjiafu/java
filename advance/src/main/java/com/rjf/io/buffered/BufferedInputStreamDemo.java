@@ -9,7 +9,7 @@ public class BufferedInputStreamDemo {
 
         BufferedInputStream bis = new BufferedInputStream(new FileInputStream("a.txt"));
         byte[] bytes = new byte[1024];
-        bytes = bis.readAllBytes();
+        bis.read(bytes);
 
         for (byte b:bytes ) {
             System.out.println(Character.toChars(b));
