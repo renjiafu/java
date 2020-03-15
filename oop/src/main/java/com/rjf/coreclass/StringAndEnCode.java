@@ -1,3 +1,4 @@
+/*
 package com.rjf.coreclass;
 
 import java.nio.charset.StandardCharsets;
@@ -51,21 +52,25 @@ public class StringAndEnCode {
         boolean b1=Boolean.parseBoolean("true");
         boolean b2=Boolean.parseBoolean("false");
 
-        /*
+        */
+/*
         要特别注意，Integer有个getInteger(String)方法，
         它不是将字符串转换为int，而是把该字符串对应的系统变量转换为Integer：
-        */
+        *//*
+
         Integer.getInteger("java.version");
 
         char[] cs="Hello".toCharArray();
         String s=new String(cs);
 
-        /*
+        */
+/*
        UTF-8编码，它是一种变长编码.
        用来把固定长度的Unicode编码变成1～4字节的变长编码.
        通过UTF-8编码，英文字符'A'的UTF-8编码变为0x41，正好和ASCII码一致.
        而中文'中'的UTF-8编码为3字节0xe4b8ad.
-        */
+        *//*
+
 
         byte[] bytes1="Hello".getBytes();//ISO8859-1
         byte[] bytes2="Hello".getBytes("UTF-8");
@@ -78,3 +83,4 @@ public class StringAndEnCode {
 
     }
 }
+*/
