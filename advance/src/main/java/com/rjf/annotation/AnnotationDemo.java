@@ -1,15 +1,15 @@
 package com.rjf.annotation;
 
-public class UseAnnotation {
+public class AnnotationDemo {
 
     @Check()
     public int score;
 
     public static void main(String[] args) throws Exception{
-      UseAnnotation useAnnotation=new UseAnnotation();
-      useAnnotation.score=-1;
-      System.out.println(useAnnotation.score);
-      AnnoLogi.check(useAnnotation);
+      AnnotationDemo annotationDemo =new AnnotationDemo();
+      annotationDemo.score=-1;
+      System.out.println(annotationDemo.score);
+      AnnotationImpl.check(annotationDemo);
 
     }
 
@@ -22,6 +22,7 @@ public class UseAnnotation {
 
         如果参数名称是value，且只有一个参数，那么可以省略参数名称。
       */
+
     /*
     可以在运行期通过反射读取RUNTIME类型的注解，注意千万不要漏写@Retention(RetentionPolicy.RUNTIME)，否则运行期无法读取到该注解。
 

@@ -12,6 +12,7 @@
         <module>start</module>
         <module>oop</module>
         <module>advance</module>
+        <module>design-pattern</module>
     </modules>
 
     <properties>

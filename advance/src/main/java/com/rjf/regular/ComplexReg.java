@@ -1,4 +1,4 @@
-package com.rjf.regularandexpression;
+package com.rjf.regular;
 
 public class ComplexReg {
     public static void main(String[] args){

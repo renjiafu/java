@@ -1,9 +1,9 @@
-package com.rjf.collection;
+package com.rjf.collection.hashmap;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class UseMap {
+public class MapDemo {
     public static void main(String[] args){
         Student s=new Student("xiaoming",99);
         Map<String,Student> map=new HashMap<>();

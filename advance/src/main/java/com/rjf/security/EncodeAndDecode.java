@@ -1,4 +1,4 @@
-package com.rjf.encryptionandsecurity;
+package com.rjf.security;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;

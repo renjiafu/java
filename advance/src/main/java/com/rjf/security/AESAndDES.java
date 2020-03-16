@@ -1,4 +1,4 @@
-package com.rjf.encryptionandsecurity;
+package com.rjf.security;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;

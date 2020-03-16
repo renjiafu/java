@@ -3,7 +3,7 @@ package com.rjf.collection;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class UseTreeMap {
+public class TreeMapDemo {
     public static void main(String[] args){
         Map<String,Integer> map=new TreeMap<>();
         map.put("orange",1);
