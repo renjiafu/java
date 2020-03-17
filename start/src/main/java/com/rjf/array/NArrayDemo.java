@@ -1,8 +1,8 @@
-package com.rjf.arr;
+package com.rjf.array;
 
 import java.util.Arrays;
 
-public class NArr {
+public class NArrayDemo {
     public static void main(String[] args){
         int[][] ns = {
                 {1, 2, 3, 4},

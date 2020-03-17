@@ -1,6 +1,6 @@
-package com.rjf.arr;
+package com.rjf.array;
 
-public class CmdArgs {
+public class CmdArgsDemo {
     public static void main(String[] args) {
         for (String arg : args) {
             if ("-version".equals(arg)) {
