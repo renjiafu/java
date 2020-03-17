@@ -1,4 +1,4 @@
-package com.rjf.process;
+package com.rjf.control;
 
 public class If {
     public static void main(String[] args){

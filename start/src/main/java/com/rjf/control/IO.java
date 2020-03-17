@@ -1,6 +1,5 @@
-package com.rjf.process;
+package com.rjf.control;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class IO {
@@ -9,7 +8,6 @@ public class IO {
         Scanner scanner = new Scanner(System.in);
 
         while (scanner.hasNext()) {
-
 
             //double d1 = scanner.nextDouble();
             String s = scanner.nextLine();

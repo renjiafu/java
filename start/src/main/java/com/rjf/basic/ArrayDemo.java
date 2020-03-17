@@ -2,7 +2,7 @@ package com.rjf.basic;
 
 import java.util.Arrays;
 
-public class Arr {
+public class ArrayDemo {
     public static void main(String[] args){
         int[] as={1,3,5,7,9};
         int[] as1=new int[5];

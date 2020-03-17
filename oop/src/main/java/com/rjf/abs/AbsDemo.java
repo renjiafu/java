@@ -4,7 +4,7 @@ public class AbsDemo {
 
     public static void main(String[] args) {
 
-        Jave jave = new Jave();
+        Javer jave = new Javer();
         jave.work();
     }
 }

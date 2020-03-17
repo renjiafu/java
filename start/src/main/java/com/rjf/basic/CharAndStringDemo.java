@@ -1,17 +1,6 @@
 package com.rjf.basic;
 
-
-/*
-                常见的转义字符包括：
-
-                \" 表示字符"
-                \' 表示字符'
-                \\ 表示字符\
-                \n 表示换行符
-                \r 表示回车符
-                \t 表示Tab
-*/
-public class CharAndString {
+public class CharAndStringDemo {
     public static void main(String[] args){
 
         char c1='A';
@@ -31,7 +20,16 @@ public class CharAndString {
         String s4="abc\"xyz";
         String s5="abc\\xya";
 
+/*
+                常见的转义字符包括：
 
+                \" 表示字符"
+                \' 表示字符'
+                \\ 表示字符\
+                \n 表示换行符
+                \r 表示回车符
+                \t 表示Tab
+*/
 
     }
 }
