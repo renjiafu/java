@@ -2,7 +2,7 @@ package com.rjf.exception;
 
 import java.io.File;
 
-public class TryCatch {
+public class TryCatchDemo {
 
     public static void main(String[] args){
         try {
