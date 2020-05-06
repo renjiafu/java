@@ -1,7 +1,7 @@
 package com.rjf.basic;
 
 /*
- *
+ *   基本数据类型
  *   Rene
  *   2020/5/6 22:54
  */

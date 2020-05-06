@@ -1,7 +1,7 @@
 package com.rjf.basic;
 
 /*
- *
+ *   变量类型
  *   Rene
  *   2019/6/6 22:54
  */
