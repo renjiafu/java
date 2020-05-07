@@ -1,6 +1,6 @@
 package com.rjf.control;
 
-public class Loop {
+public class LoopDemo {
     public static void main(String[] args){
 
         int i=100;

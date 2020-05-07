@@ -1,6 +1,6 @@
 package com.rjf.control;
 
-public class If {
+public class IfDemo {
     public static void main(String[] args){
         int n=70;
         if (n>=60){
