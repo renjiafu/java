@@ -18,5 +18,7 @@ public class ArrayDemo {
 
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
+
+        System.out.println(Arrays.binarySearch(arr,4)); //1
     }
 }
