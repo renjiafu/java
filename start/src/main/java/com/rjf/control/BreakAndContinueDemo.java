@@ -1,6 +1,6 @@
 package com.rjf.control;
 
-public class BreakAndContinue {
+public class BreakAndContinueDemo {
 
     public static void main(String[] args) {
 
