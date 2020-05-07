@@ -1,4 +1,4 @@
-package com.rjf.exception;
+package com.rjf.log;
 
 import com.sun.org.slf4j.internal.Logger;
 import com.sun.org.slf4j.internal.LoggerFactory;
@@ -9,6 +9,6 @@ public class SLF4JDemo {
 
         Logger logger = LoggerFactory.getLogger(SLF4JDemo.class);
 
-        logger.warn("warming illegel args");
+        logger.warn("warming illegal args");
     }
 }

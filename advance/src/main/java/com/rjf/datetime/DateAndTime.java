@@ -1,4 +1,4 @@
-package com.rjf.dateandtime;
+package com.rjf.datetime;
 
 import java.time.Instant;
 import java.time.ZoneId;

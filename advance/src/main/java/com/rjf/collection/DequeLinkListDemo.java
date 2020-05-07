@@ -4,7 +4,9 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 public class DequeLinkListDemo {
+
     public static void main(String[] args){
+
         Deque<String> deque=new LinkedList<>();
         deque.offerLast("A");
         deque.offerLast("B");

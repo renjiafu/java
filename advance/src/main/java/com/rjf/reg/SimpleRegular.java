@@ -1,4 +1,4 @@
-package com.rjf.regular;
+package com.rjf.reg;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

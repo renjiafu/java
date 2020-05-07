@@ -1,4 +1,4 @@
-package com.rjf.regular;
+package com.rjf.reg;
 
 public class RegMain {
     public static void main(String[] args){

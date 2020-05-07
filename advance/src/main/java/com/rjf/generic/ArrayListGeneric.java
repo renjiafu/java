@@ -9,6 +9,7 @@ public class ArrayListGeneric {
 
         stringArrayList.add("hello");
         System.out.println(stringArrayList.get(0));
+
         /*
         泛型就是编写模板代码来适应任意类型；
 
