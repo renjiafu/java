@@ -1,6 +1,6 @@
 package com.rjf.reflect;
 
-public class ReflectMain {
+public class ReflectDemo {
     public static void main(String[] args) throws Exception {
 
         Class cls=String.class;
