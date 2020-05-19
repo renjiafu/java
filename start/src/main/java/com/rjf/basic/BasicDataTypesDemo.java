@@ -20,7 +20,7 @@ public class BasicDataTypesDemo {
         int int2 = -2147483648;
         int int3 = 2_000_000_000; // 加下划线更容易识别
         int int4 = 0xff0000; // 十六进制表示的16711680
-        int int5 = 0b1000000000; // 二进制表示的512
+        int int5 = 0b1111_0000; // 二进制表示的240
         long l1 = 9000000000000000000L; // long型的结尾需要加L
 
         float f1 = 3.14f;
