@@ -5,23 +5,23 @@ import java.lang.reflect.Modifier;
 
 public class GetFieldsDemo {
 
-        public static void main (String[]args) throws Exception {
+    public static void main(String[] args) throws Exception {
 
-            Class cls=InstanceofDemo.class;
+        Class cls = Person.class;
 
-            //获取public字段
-            Field field=cls.getField("integer");
-            System.out.println(field.getName());
-            System.out.println(field.getType());
-            System.out.println(field.getModifiers());
+        //获取public字段
+        Field field = cls.getField("name");
+        System.out.println(field.getName());
+        System.out.println(field.getType());
+        System.out.println(field.getModifiers());
 
-            Field field1= InstanceofDemo.class.getField("integer");
-            int m=field1.getModifiers();
-            System.out.println(Modifier.isFinal(m)); // false
-            System.out.println(Modifier.isPublic(m)); // true
-            System.out.println(Modifier.isProtected(m)); // false
-            System.out.println(Modifier.isPrivate(m)); // false
-            System.out.println(Modifier.isStatic(m)); // false
+        Field field1 = Person.class.getField("name");
+        int m = field1.getModifiers();
+        System.out.println(Modifier.isFinal(m)); // false
+        System.out.println(Modifier.isPublic(m)); // true
+        System.out.println(Modifier.isProtected(m)); // false
+        System.out.println(Modifier.isPrivate(m)); // false
+        System.out.println(Modifier.isStatic(m)); // false
 
             /*
             Field getField(name)：根据字段名获取某个public的field（包括父类）
@@ -37,19 +37,17 @@ public class GetFieldsDemo {
              */
 
 
+        Object o = new Person("XiaoMing");
+        Object value = o.getClass().getField("name").get(o);
+        System.out.println(value);
 
+        Person person = new Person("xiao ming");
+        Field field2 = person.getClass().getDeclaredField("name");
+        field2.setAccessible(true);
+        field2.set(person, "xiao hong");
+        System.out.println(person.getName());
 
-           Object o=new Person("Xiao Ming");
-           Object value=o.getClass().getField("name").get(o);
-           System.out.println(value);
-
-            Person person=new Person("xiao ming");
-            Field field2=person.getClass().getDeclaredField("name");
-            field2.setAccessible(true);
-            field2.set(person,"xiao hong");
-            System.out.println(person.getName());
-
-        }
+    }
 
 }
 
