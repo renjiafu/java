@@ -6,7 +6,7 @@ import javax.crypto.spec.SecretKeySpec;
 import java.security.GeneralSecurityException;
 import java.util.Base64;
 
-public class AESAndDES {
+public class AesAndDesDemo {
     public static void main(String[] args) throws Exception {
         //原文
         String mes="Hello World!";

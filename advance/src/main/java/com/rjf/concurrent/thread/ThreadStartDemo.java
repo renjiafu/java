@@ -1,6 +1,6 @@
 package com.rjf.concurrent.thread;
 
-public class StartThreadDemo {
+public class ThreadStartDemo {
 
     public static void main(String[] args) {
 

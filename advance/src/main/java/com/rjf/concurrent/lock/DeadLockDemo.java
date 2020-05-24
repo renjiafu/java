@@ -1,4 +1,4 @@
-package com.rjf.concurrent.thread;
+package com.rjf.concurrent.lock;
 
 
 import java.util.concurrent.TimeUnit;

@@ -1,4 +1,4 @@
-package com.rjf.concurrent.thread;
+package com.rjf.concurrent.pool;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
