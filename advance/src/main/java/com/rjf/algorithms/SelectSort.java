@@ -12,11 +12,11 @@ public class SelectSort {
 
     public static void main(String[] args) {
 
-        int[] ints = {9,8,7,6,5,4,3,2,1,0};
+        int[] arr = {9,8,7,6,5,4,3,2,1,0};
 
-        selectSort(ints);
+        selectSort(arr);
 
-        System.out.println("排序完毕 : \n"+Arrays.toString(ints));
+        System.out.println("排序完毕 : \n"+Arrays.toString(arr));
     }
 
     private static void selectSort(int[] arr){

@@ -14,8 +14,8 @@ public class ForDemo {
             System.out.println(i);
         }
 
-        int[] ints = {1, 2, 3};
-        for (int i : ints) {
+        int[] arr = {1, 2, 3};
+        for (int i : arr) {
             System.out.println(i);
         }
     }
