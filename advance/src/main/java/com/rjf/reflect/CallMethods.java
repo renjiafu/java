@@ -7,7 +7,7 @@ public class CallMethods {
         // 获取Person的hello方法:
         Method method = Person.class.getMethod("hello");
         // 对Student实例调用hello方法:
-        method.invoke(new Student());
+        method.invoke(new Person());
 
 
         /*
@@ -37,9 +37,9 @@ public class CallMethods {
 
         //以下两种方式效果等价
         Method m=Person.class.getMethod("hello");
-        m.invoke(new Student());
+        m.invoke(new Person());
 
-        Person p=new Student();
+        Person p=new Person();
         p.hello();
 
         /*

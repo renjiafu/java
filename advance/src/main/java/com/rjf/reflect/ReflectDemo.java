@@ -12,8 +12,8 @@ public class ReflectDemo {
         printClassInfo(String[].class);
         printClassInfo(int.class);
 
-        Class clss=Class.forName("java.lang.String");
-        printClassInfo( clss);
+        Class strCls=Class.forName("java.lang.String");
+        printClassInfo( strCls);
 
 
     }
