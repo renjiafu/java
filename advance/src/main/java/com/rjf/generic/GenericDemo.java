@@ -1,15 +1,18 @@
 package com.rjf.generic;
 
-public class GenericMain {
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class GenericDemo {
     public static void main(String[] args){
 
-        Pair<String> pair=new Pair<>();
-        pair.setFirst("hello");
-        System.out.println(pair.getFirst());
+        Result result1 =new Result<>();
+        result1.setData(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+        System.out.println(result1.getData());
 
-        Pair<Integer> pair1=new Pair<>();
-        pair1.setFirst(123);
-        System.out.println(pair1.getFirst());
+        Result result2 =new Result<>();
+        result2.setData(123);
+        System.out.println(result2.getData());
 
         /*
 
