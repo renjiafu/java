@@ -40,7 +40,9 @@ public class BasicDataTypesDemo {
 
 
         /*
-                基本数据类型是CPU可以直接进行运算的类型。Java定义了以下几种基本数据类型：
+                基本数据类型是CPU可以直接进行运算的类型。
+
+                Java定义了8种基本数据类型：
 
                 整数类型：byte，short，int，long
 
