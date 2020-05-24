@@ -20,7 +20,7 @@ public class UdpClientDemo {
 
         for (int i = 0; i < 100; i++) {
             // 发送
-            byte[] send = ("Hello"+i).getBytes();
+            byte[] send = ("Hello "+i).getBytes();
             DatagramPacket packet = new DatagramPacket(send, send.length);
             ds.send(packet);
 
