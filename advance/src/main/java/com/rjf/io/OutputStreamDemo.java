@@ -7,8 +7,11 @@ public class OutputStreamDemo {
 
     public static void main(String[] args)  throws Exception{
 
-        OutputStream outputStream=new FileOutputStream("./a.txt");
-        outputStream.write(65);
+        OutputStream outputStream=new FileOutputStream("a.txt");
+
+        // ABC
+        byte[] bytes = {65,66,67};
+        outputStream.write(bytes);
         outputStream.close();
 
     /*
@@ -18,7 +21,7 @@ public class OutputStreamDemo {
 
         ByteArrayOutputStream在内存中模拟一个字节流输出。
 
-        某些情况下需要手动调用OutputStream的flush()方法来强制输出缓冲区。
+        使用buffer情况下需要手动调用OutputStream的flush()方法来强制输出缓冲区。
 
         总是使用try(resource)来保证OutputStream正确关闭。
     */
