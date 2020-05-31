@@ -25,8 +25,6 @@ public class Base64Demo {
             System.out.println("decodeUrl : "+new String(decodeUrl,"utf-8"));
 
 
-
-
         }catch(Exception e){
             e.printStackTrace();
         }

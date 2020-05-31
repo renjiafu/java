@@ -11,10 +11,9 @@ public class SimpleReg {
         Matcher matcher=pattern.matcher("010-12345678");
 
         if (matcher.matches()){
-            String s1= matcher.group(1);
-            String s2= matcher.group(2);
-
-            System.out.println(s1+"\n"+s2);
+            for (int i = 0; i <= matcher.groupCount(); i++) {
+                System.out.println(i+" : "+ matcher.group(i));
+            }
         }else {
             System.out.println("fail!");
         }
