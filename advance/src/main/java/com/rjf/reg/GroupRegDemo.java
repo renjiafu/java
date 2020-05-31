@@ -3,7 +3,7 @@ package com.rjf.reg;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class GroupReg {
+public class GroupRegDemo {
     public static void main(String[] args) {
         Pattern compile = Pattern.compile("(\\d{4}):(\\d{2}):(\\d{2})");
         Matcher matcher = compile.matcher("2020:01:01");

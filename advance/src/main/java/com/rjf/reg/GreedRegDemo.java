@@ -18,7 +18,7 @@ public class GreedRegDemo {
 
         if (matcher1.matches()){
             System.out.println("贪婪匹配");
-            for (int i = 0; i < matcher1.groupCount(); i++) {
+            for (int i = 0; i <= matcher1.groupCount(); i++) {
                 System.out.println(i+" : "+matcher1.group(i));
             }
         }
@@ -27,7 +27,7 @@ public class GreedRegDemo {
         Matcher matcher2 = pattern2.matcher("123000");
         if (matcher2.matches()){
             System.out.println("非贪婪匹配");
-            for (int i = 0; i < matcher2.groupCount(); i++) {
+            for (int i = 0; i <= matcher2.groupCount(); i++) {
                 System.out.println(i+" : "+matcher2.group(i));
             }
         }

@@ -5,6 +5,13 @@ public class RegMain {
     public static void main(String[] args){
 
         System.out.println("2019".matches("20\\d\\d"));
+
+        String re = "learn\\s(java|php|go)";
+        System.out.println("learn java".matches(re));
+        System.out.println("learn Java".matches(re));
+        System.out.println("learn php".matches(re));
+        System.out.println("learn Go".matches(re));
+
     }
 
 
@@ -34,6 +41,15 @@ public class RegMain {
         A{2,3}	            指定范围个数字符	AA，AAA
         A{2,}	            至少n个字符	    AA，AAA，AAAA，……
         A{0,3}	            最多n个字符	    空，A，AA，AAA
+
+        正则表达式	        规则	            可以匹配
+        ^	                开头	            字符串开头
+        $	                结尾	            字符串结束
+        [ABC]	            […]内任意字符	    A，B，C
+        [A-F0-9xy]	        指定范围的字符	A，……，F，0，……，9，x，y
+        [^A-F]	            指定范围外的任意字符	非A~F
+        AB|CD|EF	        AB或CD或EF	    AB，CD，EF
+
      */
 
 }
