@@ -6,13 +6,15 @@ import javax.crypto.spec.SecretKeySpec;
 import java.security.GeneralSecurityException;
 import java.util.Base64;
 
-public class AesAndDesDemo {
+public class AesDemo {
     public static void main(String[] args) throws Exception {
+
         //原文
-        String mes="Hello World!";
-        System.out.println("Message : "+mes);
+        String mes="I'm Rene";
+        System.out.println("原文 : "+mes);
+
         // 128位密钥 = 16 bytes Key:
-        byte[] key = "1234567890abcdef".getBytes("UTF-8");
+        byte[] key = "@Rene12345789000".getBytes("UTF-8");
         // 加密:
         byte[] data = mes.getBytes("UTF-8");
         byte[] encrypted = encrypt(key, data);
@@ -23,8 +25,8 @@ public class AesAndDesDemo {
     }
 
     // 加密:
-    public static byte[] encrypt(byte[] key, byte[] input) throws GeneralSecurityException {
-        Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+    public static byte[] encrypt(byte[] key, byte[] input) throws Exception {
+        Cipher cipher = Cipher.getInstance("AES");
         SecretKey keySpec = new SecretKeySpec(key, "AES");
         cipher.init(Cipher.ENCRYPT_MODE, keySpec);
         return cipher.doFinal(input);
@@ -32,7 +34,7 @@ public class AesAndDesDemo {
 
     // 解密:
     public static byte[] decrypt(byte[] key, byte[] input) throws GeneralSecurityException {
-        Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+        Cipher cipher = Cipher.getInstance("AES");
         SecretKey keySpec = new SecretKeySpec(key, "AES");
         cipher.init(Cipher.DECRYPT_MODE, keySpec);
         return cipher.doFinal(input);
