@@ -10,7 +10,7 @@ public class Base64Demo {
     public static void main(String[] args) throws UnsupportedEncodingException {
 
         String encoded= URLEncoder.encode("中文!", StandardCharsets.UTF_8.toString());
-        System.out.println("Url en"+encoded);
+        System.out.println("Url en : "+encoded);
 
         String decoded= URLDecoder.decode(encoded,StandardCharsets.UTF_8.toString());
         System.out.println("Url de : "+decoded);
