@@ -1,4 +1,4 @@
-package com.rjf.stream;
+package com.rjf.java8.stream;
 
 /*
  *
