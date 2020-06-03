@@ -43,7 +43,7 @@ public class Server extends Thread{
     }
 
     public static void main(String[] args){
-        int port=6666;
+        int port=8080;
         try{
             new Server(port).start();
         }catch(IOException e){

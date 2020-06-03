@@ -9,7 +9,7 @@ public class Client {
    public  static void main(String[] args){
 
      String serverName="localhost";
-     int port=6666;
+     int port=8080;
 
      try {
          System.out.println("连接主机:" + serverName + "端口号:" + port);
