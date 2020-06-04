@@ -10,7 +10,7 @@ public class OutputStreamDemo {
         OutputStream outputStream=new FileOutputStream("a.txt");
 
         // ABC
-        byte[] bytes = {65,66,67};
+        byte[] bytes = "ABC".getBytes();
         outputStream.write(bytes);
         outputStream.close();
 

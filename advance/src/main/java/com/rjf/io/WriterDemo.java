@@ -7,7 +7,7 @@ public class WriterDemo {
 
     public static void main(String[] args) throws Exception{
 
-        Writer writer=new FileWriter("readme.txt");
+        Writer writer=new FileWriter("./a.txt");
         writer.write('H');
         writer.close();
 

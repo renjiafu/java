@@ -17,13 +17,13 @@ public class InputStreamDemo {
         }
 
         /*
-        Java标准库的java.io.InputStream定义了所有输入流的超类：
+            Java标准库的java.io.InputStream定义了所有输入流的超类：
 
-        FileInputStream实现了文件流输入；
+            FileInputStream实现了文件流输入；
 
-        ByteArrayInputStream在内存中模拟一个字节流输入。
+            ByteArrayInputStream在内存中模拟一个字节流输入。
 
-        总是使用try(resource)来保证InputStream正确关闭。
+            总是使用try(resource)来保证InputStream正确关闭。
         */
     }
 }
