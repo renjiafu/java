@@ -17,6 +17,13 @@ public class DequeLinkListDemo {
 
 
         /*
+
+            队列Queue实现了一个先进先出（FIFO）的数据结构：
+
+            通过add()/offer()方法将元素添加到队尾；
+            通过remove()/poll()从队首获取元素并删除；
+            通过element()/peek()从队首获取元素但不删除。
+
                                      Queue	                Deque
             添加元素到队尾	        add(E e) / offer(E e)	addLast(E e) / offerLast(E e)
             取队首元素并删除	        E remove() / E poll()	E removeFirst() / E pollFirst()
@@ -24,14 +31,7 @@ public class DequeLinkListDemo {
             添加元素到队首	        无	                    addFirst(E e) / offerFirst(E e)
             取队尾元素并删除	        无	                    E removeLast() / E pollLast()
             取队尾元素但不删除	    无	                    E getLast() / E peekLast()
-        */
 
-        /*
-            队列Queue实现了一个先进先出（FIFO）的数据结构：
-
-            通过add()/offer()方法将元素添加到队尾；
-            通过remove()/poll()从队首获取元素并删除；
-            通过element()/peek()从队首获取元素但不删除。
        */
 
     }
