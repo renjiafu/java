@@ -8,7 +8,7 @@ package com.rjf.basic;
 
 public class BasicVariablesDemo {
 
-    // 静态的私有变量
+    // 静态的私有变量(类变量)
     private static double salary;
 
     // 常量
