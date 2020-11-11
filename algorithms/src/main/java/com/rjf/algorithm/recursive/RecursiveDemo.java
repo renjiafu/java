@@ -1,4 +1,4 @@
-package com.rjf.algorithms.recursive;
+package com.rjf.algorithm.recursive;
 
 /*
  *

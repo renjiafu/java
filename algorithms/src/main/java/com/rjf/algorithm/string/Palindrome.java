@@ -1,4 +1,4 @@
-package com.rjf.algorithms.string;
+package com.rjf.algorithm.string;
 
 /*
  *   回文数

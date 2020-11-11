@@ -1,4 +1,4 @@
-package com.rjf.algorithms.sort;
+package com.rjf.algorithm.sort;
 
 import java.util.Arrays;
 
