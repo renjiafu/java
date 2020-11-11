@@ -7,7 +7,12 @@ public class LocalDateTimeDemo {
 
     public static void main(String[] args) {
 
-        System.out.println(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+        LocalDateTime now = LocalDateTime.now();
+
+        System.out.println(now.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+        System.out.println(now.plusDays(1).plusHours(1).toString());    //  加1天,加1小时
+        System.out.println(now.minusDays(1).toString());    //  减一天
+
 
     }
 
