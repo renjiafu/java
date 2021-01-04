@@ -3,6 +3,7 @@ package com.rjf.array;
 import java.util.Arrays;
 
 public class NArrayDemo {
+
     public static void main(String[] args){
         // 1.定义二维数组
         int[][] ns = {
