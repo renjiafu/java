@@ -13,6 +13,7 @@ public class IntReverse {
         System.out.println(call(123));
         System.out.println(call(-123));
     }
+    
     static int call(int x){
         try{
             if (x>0){
