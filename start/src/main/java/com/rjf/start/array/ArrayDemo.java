@@ -26,7 +26,7 @@ public class ArrayDemo {
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
 
-        // 5.二分搜索
+        // 5.二分搜索(搜索前需要排序)
         System.out.println(Arrays.binarySearch(arr,4)); // 1
 
     }

@@ -1,10 +1,9 @@
 package com.rjf.start.array;
 
 /**
- * <p>描述:可变参数</p>
+ * des:可变参数
  *
  * @author Rene
- * @date 2021/1/5 22:50
  */
 public class ArgsDemo {
 

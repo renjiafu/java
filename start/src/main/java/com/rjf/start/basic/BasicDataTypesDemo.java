@@ -49,7 +49,7 @@ public class BasicDataTypesDemo {
 
                 整数类型：byte，short，int，long    (补码表示)
 
-                浮点数类型：float，double          (IEEE 754标准)
+                浮点数类型：float，double           (IEEE 754标准)
 
                 字符类型：char
 
